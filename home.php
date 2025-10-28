@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="di1">
-            <img src="" height="100px" width="100px">
+            <img src="c:\Users\Rishi\Desktop\gmulogo.jpg" height="100px" width="100px">
             <center>
                 <h1>Welcome to GMU e-Library</h1>
                 <a href=""><button class="butt1">Read Demo Book</button></a>

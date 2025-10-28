@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="login-container">
-    <div class="logo">E-lib</div>
+    <div class="logo"><img src="gmulogo.jpg" height="60px" width="60px"></div>
     <h2>Welcome to E-Library</h2>
     <p class="tagline">"Read.Learn.Grow-Anytime,Anywhere"</p>
 

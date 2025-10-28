@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="register-container">
-    <div class="logo">E-lib</div>
+    <div class="logo"><img src="gmulogo.jpg" height="60px" width="60px"></div>
     <h2>Create Your Account</h2>
     <p class="tagline">Your Gateway to Knowledge</p>
 

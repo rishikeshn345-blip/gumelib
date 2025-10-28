@@ -56,9 +56,9 @@
         <li>Members:
             <ol>
                 <li>Rishikesh N</li>
-                <li>Vinay</li>
-                <li>Manoj</li>
-                <li>Pavan</li>
+                <li>Vinay M</li>
+                <li>Manoj S G</li>
+                <li>Pavan M Patil</li>
             </ol>
         </li>
     </ul>

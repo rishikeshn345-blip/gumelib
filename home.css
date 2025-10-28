@@ -1,0 +1,49 @@
+
+.di1{
+    height: 280px;
+    background-color: black;
+    color: gold;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.di2{
+    height: 200px ;
+    width: 300px;
+    background-color: gold;
+    color: brown;
+    font-size: large;
+}
+
+.di3{
+    height: 200px;
+    background-color: brown;
+    color: gold;
+}
+.butt1{
+    width: 150px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: white;
+    color: black;
+}
+.butt1:active{
+    background-color: gold;
+    color: brown;
+}
+
+.butt2{
+    color: gold;
+    background-color: brown;
+    border-color: brown;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: medium;
+}
+.butt2:active{
+    background-color: burlywood;
+    color: black;
+}
+.he{
+    color: brown;
+}

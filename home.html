@@ -1,86 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GMU e-Library</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#b07a2a; /* gold/brown mix */
+      --muted:#6b6b6b;
+      --dark:#2a2a2a;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#f6f7fb,var(--bg));color:var(--dark)}
+
+    .container{max-width:1100px;margin:24px auto;padding:24px}
+
+    header{
+      background: linear-gradient(90deg, rgba(32,30,30,0.95), rgba(44,36,28,0.95));
+      color:var(--card);
+      padding:22px 28px;
+      border-radius:18px;
+      display:flex;align-items:center;gap:20px;
+      box-shadow:0 8px 30px rgba(40,40,60,0.08);
+    }
+
+    .brand{display:flex;align-items:center;gap:18px}
+    .brand img{width:96px;height:96px;border-radius:12px;object-fit:cover;border:3px solid rgba(255,255,255,0.06)}
+    .brand h1{font-family:'Playfair Display', serif;margin:0;font-size:1.6rem;letter-spacing:0.6px}
+    .hero-cta{margin-left:auto;display:flex;gap:12px}
+
+    .btn{appearance:none;border:0;padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer}
+    .btn-primary{background:var(--accent);color:white;box-shadow:0 6px 18px rgba(176,122,42,0.18)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.95)}
+
+    main{margin-top:18px}
+
+    .intro{background:var(--card);padding:28px;border-radius:14px;display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center;box-shadow:0 8px 30px rgba(50,50,70,0.04)}
+    .intro .quote{font-family:'Playfair Display', serif;font-size:1.4rem;color:var(--accent);margin:0}
+    .intro p{color:var(--muted);margin-top:10px;line-height:1.6}
+
+    .stats{display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,var(--glass),transparent);padding:18px;border-radius:12px;text-align:center}
+    .stat{font-weight:700;font-size:1.3rem}
+    .stat small{display:block;color:var(--muted);font-weight:500;font-size:0.85rem}
+
+    .about{margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:24px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,40,0.04)}
+    .card h2{margin-top:0;color:var(--dark)}
+    ul.features{padding-left:18px;color:var(--muted)}
+
+    .members{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:12px}
+    .member{background:linear-gradient(180deg,rgba(176,122,42,0.06),transparent);padding:10px;border-radius:8px;font-weight:600;color:var(--dark)}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:0.95rem}
+
+    /* responsive */
+    @media (max-width:880px){
+      .intro{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      .hero-cta{margin-top:12px}
+    }
+
+    /* small niceties */
+    a{color:inherit;text-decoration:none}
+    img[alt]{display:block}
+  </style>
 </head>
-<link rel="stylesheet" href="home.css">
 <body>
+  <div class="container">
     <header>
-        <div class="di1">
-            <img src="gmulogo.jpg" height="120px" width="120px">
-            <center>
-                <h1>Welcome to GMU e-Library</h1>
-                <a href=""><button class="butt1">Read Demo Book</button></a>
-            </center>
+      <div class="brand">
+        <img src="gmulogo.jpg" alt="GMU Logo">
+        <div>
+          <h1>GMU e‑Library</h1>
+          <div style="color:rgba(255,255,255,0.8);font-size:0.95rem">Digital resources for students & faculty</div>
         </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#read"><button class="btn btn-ghost">Read Demo Book</button></a>
+        <a href="login.php"><button class="btn btn-primary">Login</button></a>
+      </div>
     </header>
-    <hr>
-    <center>
-        <h2 class="he">'A mind without books is like a body without soul...'</h2>
-        <a href="login.php"><button class="butt2">Login</button></a>
-        <a href="register.php"><button class="butt2">Register</button></a>
-    </center>
-    <h2 class="he">About us:</h2>
-    <ul>
-        <li>The E-Library of GM University, Davanagere is a digital learning platform providing access to academic resources anytime, anywhere.</li>
 
-        <li>It serves as an extension of the university’s physical library, bringing books, journals, and study materials to your device.</li>
-
-        <li>Offers a wide collection of e-books, research papers, lecture notes, and multimedia learning materials across all disciplines.</li>
-
-        <li>Designed with a user-friendly interface and advanced search options for quick and easy access to resources.</li>
-
-        <li>Promotes a digital learning culture that supports research, innovation, and lifelong learning.</li>
-
-        <li>Acts as a central hub for students, faculty, and researchers to share and expand knowledge.</li>
-
-        <li>Provides 24/7 online access to all digital content.</li>
-
-        <li>Regularly updated with new study materials, question papers, and reference books.</li>
-
-        <li>Encourages students to read, learn, and innovate using digital tools.</li>
-
-        <li>Supports the universitys vision of academic excellence through technology.</li>
-    </ul>
-    <br>
-    <center>
-        <div class="di2">
-            <h2>30+ books</h2>
-            <h2>10+ magazines</h2>
-            <h2>30+ study materials</h2>
+    <main>
+      <section class="intro">
+        <div>
+          <h2 class="quote">“A mind without books is like a body without a soul.”</h2>
+          <p>Welcome to the GM University E-Library — a curated digital collection of textbooks, papers, lecture notes and multimedia resources tailored for students and researchers. Use the search or browse by subject to discover resources anytime, anywhere.</p>
+          <p style="margin-top:18px"><a href="register.php"><button class="btn btn-primary">Create an account</button></a></p>
         </div>
-    </center>
-    <ul>
-        <li>Members:
-            <ol>
-                <li>Rishikesh N</li>
-                <li>Vinay M</li>
-                <li>Manoj S G</li>
-                <li>Pavan M Patil</li>
-            </ol>
-        </li>
-    </ul>
-    <ul>
-        <li>Technologies used:
-            <ol>
-                <li>HTML 5</li>
-                <li>CSS</li>
-                <li>PHP</li>
-                <li>SQL</li>
-            </ol>
-        </li>
-    </ul>
-    <HR>
-        <footer>
-            <div class="di3">
-                <center>
-                    <br><br>
-                    <h3>&copy; ALL RIGHTS RESERVED</h3>
-                    <h3>MADE BY RISHIKESH AND TEAM</h3>
-                </center>
+
+        <aside class="stats">
+          <div class="stat">30+ books<small>Curated titles across disciplines</small></div>
+          <div class="stat">10+ magazines<small>Journals & periodicals</small></div>
+          <div class="stat">30+ study materials<small>Notes, question papers & more</small></div>
+        </aside>
+      </section>
+
+      <div class="about">
+        <div class="card">
+          <h2>About us</h2>
+          <ul class="features">
+            <li>24/7 online access to books, journals and study materials.</li>
+            <li>User-friendly interface with advanced search and filters.</li>
+            <li>Regularly updated with new study materials & reference books.</li>
+            <li>Supports research, innovation and lifelong learning for the GMU community.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="card">
+            <h2>Members</h2>
+            <div class="members">
+              <div class="member">Rishikesh N</div>
+              <div class="member">Vinay M</div>
+              <div class="member">Manoj S G</div>
+              <div class="member">Pavan M Patil</div>
             </div>
-        </footer>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h2>Technologies used</h2>
+            <p style="margin:0;color:var(--muted)">HTML5 • CSS3 • PHP • MySQL</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="card" style="margin-top:18px;background:transparent;box-shadow:none;padding:14px">
+        <strong>&copy; "GMU e-Library" — All rights reserved.</strong>
+        <div style="margin-top:6px;color:var(--muted)">Made by Rishikesh and team</div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

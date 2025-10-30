@@ -10,7 +10,7 @@
     :root{
       --bg:#f7f8fb;
       --card:#ffffff;
-      --accent:#b07a2a; /* gold/brown mix */
+      --accent:#b07a2a; 
       --muted:#6b6b6b;
       --dark:#2a2a2a;
       --glass: rgba(255,255,255,0.6);
@@ -60,14 +60,13 @@
 
     footer{margin-top:22px;text-align:center;color:var(--muted);font-size:0.95rem}
 
-    /* responsive */
     @media (max-width:880px){
       .intro{grid-template-columns:1fr}
       .about{grid-template-columns:1fr}
       .hero-cta{margin-top:12px}
     }
 
-    /* small niceties */
+    
     a{color:inherit;text-decoration:none}
     img[alt]{display:block}
   </style>
@@ -128,7 +127,7 @@
 
           <div class="card" style="margin-top:12px">
             <h2>Technologies used</h2>
-            <p style="margin:0;color:var(--muted)">HTML5 • CSS3 • PHP • MySQL</p>
+            <p style="margin:0;color:var(--muted)">HTML5 • CSS3 • PHP • MySQL.javascript</p>
           </div>
         </div>
       </div>

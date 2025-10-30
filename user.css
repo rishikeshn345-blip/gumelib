@@ -1,4 +1,4 @@
-/* ===== Reset default styles ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* ===== Body styling ===== */
+
 body {
     background: #f4f6f9;
     color: #333;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* ===== Header styling ===== */
+
 header {
     background: #003366;
     color: white;
@@ -46,7 +46,7 @@ header h3 {
     color: #cce0ff;
 }
 
-/* ===== Form styling (dropdown + button) ===== */
+
 form {
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ button:hover {
     background-color: #0059b3;
 }
 
-/* ===== Search bar styling ===== */
+
 search {
     display: flex;
     justify-content: center;
@@ -119,7 +119,7 @@ search button:hover {
     background-color: #0073e6;
 }
 
-/* ===== Table styling ===== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -150,7 +150,7 @@ tr:hover td {
     background-color: #f2f7ff;
 }
 
-/* ===== Responsive design ===== */
+
 @media (max-width: 768px) {
     header {
         text-align: center;

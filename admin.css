@@ -1,4 +1,4 @@
-/* ===== Reset some default styles ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* ===== Body styling ===== */
+
 body {
     background: #f4f6f9;
     color: #333;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* ===== Header section ===== */
+
 header {
     background: #003366;
     color: white;
@@ -46,7 +46,6 @@ header h3 {
     color: #cce0ff;
 }
 
-/* ===== Form styling ===== */
 form {
     display: flex;
     justify-content: center;
@@ -83,7 +82,11 @@ button:hover {
     background-color: #0059b3;
 }
 
-/* ===== Table styling ===== */
+search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -114,7 +117,6 @@ tr:hover td {
     background-color: #f2f7ff;
 }
 
-/* ===== Responsive design ===== */
 @media (max-width: 768px) {
     header {
         text-align: center;

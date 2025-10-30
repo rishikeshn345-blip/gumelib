@@ -127,7 +127,7 @@
 
           <div class="card" style="margin-top:12px">
             <h2>Technologies used</h2>
-            <p style="margin:0;color:var(--muted)">HTML5 • CSS3 • PHP • MySQL.javascript</p>
+            <p style="margin:0;color:var(--muted)">HTML5 • CSS3 • PHP • MySQL • Javascript</p>
           </div>
         </div>
       </div>
